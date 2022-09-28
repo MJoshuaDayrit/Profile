@@ -1,19 +1,16 @@
 <html>
 	<head>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/contact.css">
 		<title>
-			Box Layout
+			Personal Blog Website
 		</title>
 		</head>
 	
 	<body>
 		
 		<!-- header of website layout -->
-		<div class="header">
-			<h2 class="text-heading">
-				Blog
-			</h2>
-		</div>
+		
 		
 		<!-- navigation menu of website layout -->
 		<div class="nav_menu">
@@ -25,27 +22,37 @@
       
 		</div>
 
-        <style>
-            .page-contact-form input,.page-contact-form textarea {width: 100%;max-width: 100%;margin-bottom: 10px;}
-            .page-contact-form input.contact-form-button.contact-form-button-submit {padding: 10px;background: #ea6337; color: #fff;border: none;}
-            .page-contact-form input.contact-form-button.contact-form-button-submit:hover {background: #d85b32;color: #fff;}
-            </style>
-            <div class="contact-form-widget page-contact-form">
-            <div class="form">
-            <form name="contact-form">
-            Name:<br />
-            <input class="contact-form-name" id="ContactForm1_contact-form-name" name="name" size="30" type="text" value="" />
-            E-mail: <span id="required">*</span><br />
-            <input class="contact-form-email" id="ContactForm1_contact-form-email" name="email" size="30" type="text" value="" />
-            Message: <span id="required">*</span><br />
-            <textarea class="contact-form-email-message" cols="25" id="ContactForm1_contact-form-email-message" name="email-message" rows="5"></textarea>
-            <input class="contact-form-button contact-form-button-submit" id="ContactForm1_contact-form-submit" type="button" value="Submit" />
-            <br/>
-            <div class="contact-form-error-message" id="ContactForm1_contact-form-error-message">
+<!--- Contact Us No Image -->
+        <div class="container">
+            <div style="text-align:center">
+              <h2>Contact Form</h2>
+              <p>Swing by for a cup of coffee, or leave me a message:</p>
             </div>
-            <div class="contact-form-success-message" id="ContactForm1_contact-form-success-message">
+            <div class="row">
+              <div class="column">
+                <img src="images/contact1.jpg" style="width:100%">
+              </div>
+              <div class="column">
+                <form action="/action_page.php">
+                  <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    <option value="usa">Philippines</option>
+                    <option value="usa">Japan</option>
+                    <option value="usa">South Korea</option>
+                    
+                  </select>
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
             </div>
-            </form>
-            </div>
-            </div>
+          </div>
 </html>
